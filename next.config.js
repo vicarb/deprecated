@@ -5,6 +5,7 @@ const nextConfig = {
   image: {
     loader: 'akamai',
     path: ''
+    
   }
 }
 
