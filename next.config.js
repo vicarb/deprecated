@@ -6,7 +6,9 @@ const nextConfig = {
     loader: 'akamai',
     path: ''
     
-  }
-}
+  },
+  basePath: '/vicarb.github.io',
+  assetPrefix: '/vicarb.github.io',
+};
 
 module.exports = nextConfig
