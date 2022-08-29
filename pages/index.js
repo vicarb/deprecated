@@ -26,7 +26,13 @@ export default function Home() {
             <h2>Ecommerce</h2>
             <p>Plataforma ecommerce con medio de pago nacional</p>
           </a>
-
+          <Image
+      src=""
+      layout="fill"
+      sizes="(min-width: 75em) 33vw,
+              (min-width: 48em) 50vw,
+              100vw"
+    />
           <a href="https://encalbuco.cl" className={styles.card}>
             <h2>Hub de Negocios</h2>
             <p>Red de negocios y servicios en la comuna de Calbuco</p>
