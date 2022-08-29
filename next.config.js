@@ -7,8 +7,7 @@ const nextConfig = {
     path: ''
     
   },
-  basePath: '',
-  assetPrefix: '',
+
 };
 
 module.exports = nextConfig
