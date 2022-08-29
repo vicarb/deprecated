@@ -7,8 +7,8 @@ const nextConfig = {
     path: ''
     
   },
-  basePath: '/vicarb.github.io',
-  assetPrefix: '/vicarb.github.io',
+  basePath: '',
+  assetPrefix: '',
 };
 
 module.exports = nextConfig
