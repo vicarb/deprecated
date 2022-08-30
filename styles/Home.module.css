@@ -12,6 +12,9 @@
   align-items: center;
 }
 
+.but {
+  background: red;
+ }
 .footer {
   display: flex;
   flex: 1;

@@ -2,11 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  image: {
-    loader: 'akamai',
-    path: ''
+  // image: {
+  //   loader: 'akamai',
+  //   path: ''
     
-  },
+  // },
 
 };
 

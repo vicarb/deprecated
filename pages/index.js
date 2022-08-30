@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { Button } from '../components/button/button'
 
 import styles from '../styles/Home.module.css'
 
@@ -15,6 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Víctor Ignacio Cárdenas Bahamonde
         </h1>
+        <Button/>
         <p className={styles.description}>
           Web Developer, MsC Marketing, Ingeniero Comercial
         </p>
