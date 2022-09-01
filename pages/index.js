@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Button } from '../components/button/button'
 
 import styles from '../styles/Home.module.css'
+import { motion } from 'framer-motion'
+
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <motion.main className={styles.main} initial={{ x:'-100vw'}} animate={{ x:0 }} transition={{type: 'spring', duration: 1, bounce: 0.3, staggerChildren:0.3}}>
         <h1 className={styles.title}>
           Víctor Ignacio Cárdenas Bahamonde
         </h1>
@@ -52,7 +54,7 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      </motion.main>
 
       <footer className={styles.footer}>
         <a
