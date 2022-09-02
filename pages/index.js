@@ -3,6 +3,7 @@ import { Button } from '../components/button/button'
 
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
+import Swipe from '../components/swiper/swiper'
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       </Head>
 
       <motion.main className={styles.main} initial={{ x:'-100vw'}} animate={{ x:0 }} transition={{type: 'spring', duration: 1, bounce: 0.3, staggerChildren:0.3}}>
+        <img src='/retrato1.jpeg' className='w-80 h-80 rounded-full'/>
         <h1 className={styles.title}>
           Víctor Ignacio Cárdenas Bahamonde
         </h1>
@@ -53,6 +55,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+        
         </div>
       </motion.main>
 
@@ -66,6 +69,9 @@ export default function Home() {
          
         </a>
       </footer>
+        <div className='m-12'>
+        <Swipe/>
+        </div>
     </div>
   )
 }
