@@ -14,12 +14,32 @@ const Swipe = () => {
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
-      slidesPerView={3}
+      slidesPerView="auto"
+      loop={true}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
+      breakpoints= {{
+
+          // when window width is <= 499px
+          499: {
+              slidesPerView: 1,
+              spaceBetweenSlides: 50
+            },
+            // when window width is <= 999px
+            699: {
+                slidesPerView: 2,
+                spaceBetweenSlides: 50
+            },
+            999: {
+                slidesPerView: 3,
+                spaceBetweenSlides: 50
+            }
+        }
+    }
+
     >
       <SwiperSlide>
       <img src='workimg/microservice.webp' className='w-full h-60'/>
