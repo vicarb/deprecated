@@ -28,7 +28,7 @@ export default function Home() {
         
 
         <div className={styles.grid}>
-          <a href="https://crypton.cl" className={styles.card}>
+          <a href="https://chillin.cl" className={styles.card}>
             <h2>Ecommerce</h2>
             <p>Plataforma ecommerce con medio de pago nacional</p>
           </a>
